@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Saint Joseph College Home page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">+
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    .header img {
+      max-width: 150px;
+      margin-right: 10px;
+    }
+    .header h1 {
+      color: green;
+      font-size: 20px;
+      margin: 0;
+    }
+    .header p {
+      font-size: 15px;
+      margin: 0;
+    }
+    .slideshow-container {
+      width: 100vw;
+      height: 50vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .slides {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 1000%;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+     .navbar {
+      color: green;
+      text-align: center;
+      width: 1000x;
+      background: yellow;
+    }
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: medium;
+    }
+    .navbar li {
+      position: relative;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: green;
+      padding: 10px 20px;
+      display: block;
+    }
+    .navbar .dropdown {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      padding: 0;
+      top: 100%;
+      left: 0;
+      font-size: medium;
+      align-items: center;
+    }
+    .navbar li:hover .dropdown {
+      display: block;
+      z-index: 1;
+    }
+    .navbar .dropdown li {
+      width: 200px;
+
+    }
+  
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+    }
+    footer img {
+      width: 100px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img title="sjclogo" alt="sjclogo" src="Sjclogo.png" class="logo">
+    <div>
+      <h1>Saint Joseph College, <br> Maasin City Southern Leyte</h1>
+      <p>God, Country, Knowledge</p>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="#">ABOUT</a>
+        <ul class="dropdown">
+          <li><a href="page.html">Historical Background</a></li>
+          <li><a href="#">Vision, Mission & Goals</a></li>
+          <li><a href="College Hymn.html">College Hymn</a></li>
+          <li><a href="SJC logo.html">SJC Logo</a></li>
+          <li><a href="Location Map Sjc.html">Location Map</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#">NEWS</a>
+      <ul class="dropdown">
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">ANNOUCEMENT</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <center>
+    <h1>HAPPY WORLD TEACHER'S DAY</h1>
+  </center>
+  <div class="slideshow-container">
+    <img class="slides" src="pic1.jpg" alt="Slide 1">
+    <img class="slides" src="pic2.jpg" alt="Slide 2">
+    <img class="slides" src="pic3.jpg" alt="Slide 3">
+    <img class="slides" src="pic44.jpg" alt="Slide 4">
+  </div>
+  <footer>
+    <div>
+      <h2 style="color:black;">Saint Joseph College</h2>
+      <p style="color:black;">Brgy Tunga-Tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+      <p style="color:black;">Trunk line <b>(053) 570-8448</b></p>
+      <p style="color:black;">Local <b>116 -Front Desk</b></p>
+      <p style="color:black;"> Fox <b>(053) 381-2283</b></p>
+      <p>Email <a href="mailto:info@sjc.edu.ph">info@sjc.edu.ph</a></p>
+      <p style="color:black;"> Facebook Account</p>
+      <h2 style="color:black;">Research</h2>
+      <p style="color:black;">Universal journal of Education Research (UJER)</p>
+      <p style="color:black;">International Journal of Multidisciplinary Educational Research and Innovation (IJMERI)</p>
+      <h2 style="color:black;">Links</h2>
+      <p style="color:black;">SJC Library</p>
+      <p style="color:black;">SJC Webmail</p>
+      <p style="color:black;">Careers</p>
+      <p style="color:black;">Privacy Policy</p>
+      <p style="color:black;">Contact Us</p>
+    </div>
+    <center>
+      <img src="nps.png" alt="nps">
+    </center>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000);
+    }
+  </script>
+</body>
+</html>

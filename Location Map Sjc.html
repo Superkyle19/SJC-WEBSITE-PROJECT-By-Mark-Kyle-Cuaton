@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Sjc Map</title>
+</head>
+<body>
+  <style>
+  .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    .header img {
+      max-width: 150px;
+      margin-right: 10px;
+    }
+    .header h1 {
+      color: green;
+      font-size: 20px;
+      margin: 0;
+    }
+    .header p {
+      font-size: 15px;
+      margin: 0;
+    }
+ .navbar {
+      color: green;
+      text-align: center;
+      width: 1000x;
+      background: yellow;
+    }
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: medium;
+    }
+    .navbar li {
+      position: relative;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: green;
+      padding: 10px 20px;
+      display: block;
+    }
+    .navbar .dropdown {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      padding: 0;
+      top: 100%;
+      left: 0;
+      font-size: medium;
+      align-items: center;
+    }
+    .navbar li:hover .dropdown {
+      display: block;
+      z-index: 1;
+    }
+    .navbar .dropdown li {
+      width: 200px;
+
+    }
+   .sjcmap img {
+    width: 450px;
+     height: 300px
+  }
+
+  </style>
+  
+  <div class="header">
+    <img title="SJC Logo" alt="SJC Logo" src="Sjclogo.png" class="logo">
+    <div>
+      <h1>Saint Joseph College, <br> Maasin City Southern Leyte</h1>
+      <p>God, Country, Knowledge</p>
+    </div>
+  </div>
+
+     
+    <div class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="#">ABOUT</a>
+        <ul class="dropdown">
+          <li><a href="page.html">Historical Background</a></li>
+          <li><a href="#">Vision, Mission & Goals</a></li>
+          <li><a href="College Hymn.html">College Hymn</a></li>
+          <li><a href="SJC logo.html">SJC Logo</a></li>
+          <li><a href="Location Map Sjc.html">Location Map</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#">NEWS</a>
+      <ul class="dropdown">
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">ANNOUCEMENT</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="sjcmap">
+    <center>
+    <h2>Location Map</h2>
+    </center>
+    <center>
+    <img src="Sjcmap.jpg" alt="Sjcmap">
+    </center>
+</div>
+  <div class="Sjctext1">
+    <h4>Saint Joseph College Maasin, <br> Leyte</h4>
+    <p> Brgy. Tunga-tunga, Maasin
+      <br> City, Southern Leyte, 
+      <br> Philippines, 6600</p>
+      <br> Trunk Line: (053) 570-4884</p>
+
+      <br> Local: 116 – Front Desk</p>
+
+      <br> Email: info@sjc.edu.ph</p>
+
+      <br> Facebook Accounts</p>
+    </p>
+  </div>
+</body>
+</html>
